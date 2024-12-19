@@ -10,7 +10,7 @@ class TestDatasetProcessor:
         dataframe (pd.DataFrame): Input dataframe (new test dataset).
         reference_columns (list): List of reference columns from training data.
         """
-        self.df = dataframe
+        self.df = dataframe.copy()  # Avoid modifying the original dataset
         self.reference_columns = reference_columns
         self.processed_X = None
         self.scaler = StandardScaler()
@@ -41,7 +41,10 @@ class TestDatasetProcessor:
         # Label Encoding for categorical columns
         for col in categorical_columns:
             le = LabelEncoder()
-            self.df[col] = le.fit_transform(self.df[col].astype(str))
+            try:
+                self.df[col] = le.fit_transform(self.df[col].astype(str))
+            except ValueError:
+                print(f"Skipping column '{col}' due to unseen values.")
 
         # One-Hot Encoding for categorical columns
         self.df = pd.get_dummies(self.df, columns=categorical_columns, drop_first=True)
@@ -55,14 +58,20 @@ class TestDatasetProcessor:
         Scale numeric features using StandardScaler.
         """
         numeric_columns = self.df.select_dtypes(include=['float64', 'int64']).columns
-        self.df[numeric_columns] = self.scaler.fit_transform(self.df[numeric_columns])
+        try:
+            self.df[numeric_columns] = self.scaler.fit_transform(self.df[numeric_columns])
+        except ValueError as e:
+            print(f"Error in scaling numeric features: {e}")
 
     def process_data(self):
         """
         Run all preprocessing steps for the test dataset.
         """
-        self.handle_problematic_values()
-        self.balanced_encoding()
-        self.scale_numeric_features()
-        self.processed_X = self.df
-        print("Test dataset processing completed successfully.")
+        try:
+            self.handle_problematic_values()
+            self.balanced_encoding()
+            self.scale_numeric_features()
+            self.processed_X = self.df
+            print("Test dataset processing completed successfully.")
+        except Exception as e:
+            print(f"Error during processing: {e}")
