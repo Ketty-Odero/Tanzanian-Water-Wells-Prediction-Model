@@ -14,7 +14,7 @@ The goal is to provide actionable insights to improve water resource management 
 
 - Understand factors contributing to well performance (geographic, population, funding, etc.).
 - Predict well status using machine learning models.
-- Optimize model performance for binary classification (Functional vs. Non-functional/Needs Repair).
+- Optimize model performance for **binary classification** (Functional vs. Non-functional/Needs Repair).
 - Provide data-driven recommendations for stakeholders.
 
 ## Project Structure
