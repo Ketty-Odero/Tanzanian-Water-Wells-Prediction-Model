@@ -1,7 +1,7 @@
 # Tanzanian-Water-Wells-Prediction-Model
 This repository builds a model to predict functionality of pumps using the Tanzanian Water Wells dataset
 
-# 📖 Overview
+# Overview
 This project analyzes Tanzanian water wells to assess their functionality and identify key factors affecting well performance. Using a dataset of over 59,000 water points, we classify wells as:
 Functional
 Non-functional
