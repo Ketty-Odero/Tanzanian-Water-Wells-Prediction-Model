@@ -58,3 +58,10 @@ Tanzanian-Water-Wells-Prediction-Model/
 Preprocessed validation data to align with training features.
 Evaluated model predictions with the test data.
 
+## Key Results
+Best Model: Tuned Random Forest
+Testing Accuracy: 82%
+Cross-Validation Score: 81.6%
+Important Features:
+Longitude, Latitude, GPS Height, Construction Year, Population
+
