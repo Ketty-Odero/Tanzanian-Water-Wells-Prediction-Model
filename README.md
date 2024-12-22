@@ -92,7 +92,7 @@ A stacked bar chart showing well functionality by water quality
 
 A stacked bar chart showing well functionality by payments
 
-![well status by payments](./images\well_status_payments.png)
+![well status by payments](./images/well_status_payments.png)
 
 #### Feature Engineering:
 
@@ -100,7 +100,7 @@ Encoded categorical variables with label encoding and one-hot encoding.
 
 A correlation heatmap of encoded variables
 
-[corr heatmap](./images/corr_matrix.png)
+![corr heatmap](./images/corr_matrix.png)
 
 #### Modeling:
 
@@ -127,7 +127,7 @@ Important Features:
 
 A confusion matrix showing comparison of non-tuned Vs tuned random forest model
 
-[random forest models](./images/origin%20Vs%20tuned.png)
+![random forest models](./images/origin%20Vs%20tuned.png)
 
 #### **Recommendation**
 - Focus on class 1 improvement by using advanced techniques such class weighting to improve on dataset balance.
