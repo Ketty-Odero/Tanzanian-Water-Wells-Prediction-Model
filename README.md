@@ -17,6 +17,14 @@ The goal is to provide actionable insights to improve water resource management 
 - Optimize model performance for **binary classification** (Functional vs. Non-functional/Needs Repair).
 - Provide data-driven recommendations for stakeholders.
 
+  ## Data source
+The dataset provided on https://www.drivendata.org/ by **Taarifa** and the **Tanzanian Ministry of Water**. More details on the competition could be found [here](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/).
+Feature description for the data can be found in [data description](data_description.txt).
+The two datasets we will use are [Training set values](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/data/) and [Training set labels](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/data/)
+##### **Data assumptions :**
+- The dataset is representative of all wells in Tanzania
+- Historical data trends will hold for future predictions
+
 ## Project Structure
 Tanzanian-Water-Wells-Prediction-Model/
 ├── data/
@@ -76,6 +84,10 @@ Important Features:
 - Explore advanced ensemble methods such as boosting, inorder to optimize models ability to predict minority class.
 - Data quality: Engage with key stakeholders to ensure quality data is collected, to ensure proper handling of outliers or missing values in future with data quality controls put in place.
 - Deployment and Monitoring: Develop a robust system for deploying the model into a production environment and monitor its performance over time.
+
+#### Future Work
+- Integrate additional datasets (e.g.maintenance records).
+- Experiment with other machine learning algorithms (e.g., XGBoost, LightGBM).
 
 
 
