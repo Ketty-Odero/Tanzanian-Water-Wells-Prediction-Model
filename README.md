@@ -1,7 +1,11 @@
 # Tanzanian-Water-Wells-Prediction-Model
 This repository builds a model to predict functionality of pumps using the Tanzanian Water Wells dataset
 
-## Overview
+## Business Understanding
+### Overview
+
+Tanzania is in the midst of a crisis, out of its 65 million population, 55%  and 11% of rural and urban population respectively, do not have access to clean water. People living under these circumstances, particularly women and girls, spend a significant amount of time traveling long distances to collect water.This poses significant risks in public health, economic productivity and educational opportunities. Now more than everaccess to safe water at home is critical to families in Tanzania.
+
 This project analyzes Tanzanian water wells to assess their functionality and identify key factors affecting well performance. Using a dataset of over 59,000 water points, we classify wells as:
 
 - Functional
@@ -10,12 +14,26 @@ This project analyzes Tanzanian water wells to assess their functionality and id
 
 The goal is to provide actionable insights to improve water resource management in Tanzania and prioritize repairs or replacements.
 
-## Project Objectives
+## Business goals
+- **Optimize resource allocation :** Predict well functionality to prioritize repairs for non-functional and poorly functioning wells . 
 
+- **Improve community access to clean water :** Reduce repairs downtime and increase availability of functional water points
+
+- **Support sustainability and durability of wells :** Provide insights to future installations and maintenance strategies. What factors contribute to well failures?
+
+#### Project objectives
 - Understand factors contributing to well performance (geographic, population, funding, etc.).
 - Predict well status using machine learning models.
 - Optimize model performance for **binary classification** (Functional vs. Non-functional/Needs Repair).
 - Provide data-driven recommendations for stakeholders.
+
+## Data source
+The dataset provided on https://www.drivendata.org/ by **Taarifa** and the **Tanzanian Ministry of Water**. More details on the competition could be found [here](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/).
+Feature description for the data can be found in [data description](data_description.txt).
+The two datasets we will use are [Training set values](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/data/) and [Training set labels](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/data/)
+##### **Data assumptions :**
+- The dataset is representative of all wells in Tanzania
+- Historical data trends will hold for future predictions
 
 ## Project Structure
 Tanzanian-Water-Wells-Prediction-Model/
@@ -76,6 +94,10 @@ Important Features:
 - Explore advanced ensemble methods such as boosting, inorder to optimize models ability to predict minority class.
 - Data quality: Engage with key stakeholders to ensure quality data is collected, to ensure proper handling of outliers or missing values in future with data quality controls put in place.
 - Deployment and Monitoring: Develop a robust system for deploying the model into a production environment and monitor its performance over time.
+
+#### Future Work
+- Integrate additional datasets (e.g.maintenance records).
+- Experiment with other machine learning algorithms (e.g., XGBoost, LightGBM).
 
 
 
