@@ -55,24 +55,31 @@ Tanzanian-Water-Wells-Prediction-Model/
 └── index.ipynb                       # Final jupyter notebook
 
 #### Technologies Used
-- Programming: Python, IDE : Jupyter Notebooks
-- Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
-- Visualization: Heatmaps, Confusion matrix and Stacked bar charts
-- Version Control: Git, GitHub
+Programming: Python, IDE : Jupyter Notebooks
+
+Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+
+Visualization: Heatmaps, Confusion matrix and Stacked bar charts
+
+Version Control: Git, GitHub
 
 ## Analysis Steps
 ####  Data Cleaning:
 
-- Handled missing values for features like funder, installer, permit, etc.
-- Dropped irrelevant features like id and date_recorded.
+Handled missing values for features like funder, installer, permit, etc.
+
+Dropped irrelevant features like id and date_recorded.
+
 #### Exploratory Data Analysis:
 
-- Investigated geographic, demographic, and operational factors.
-- Visualized relationships using stacked bar charts and heatmaps.
+Investigated geographic, demographic, and operational factors.
+
+Visualized relationships using stacked bar charts and heatmaps.
+
 #### Visualizations
 The following visualizations are included in this analysis:
 
-[well status by region]
+[well status by region](images\well_status_region.png)
 #### Feature Engineering:
 
 - Encoded categorical variables with label encoding and one-hot encoding.
