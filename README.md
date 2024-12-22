@@ -69,6 +69,10 @@ Tanzanian-Water-Wells-Prediction-Model/
 
 - Investigated geographic, demographic, and operational factors.
 - Visualized relationships using stacked bar charts and heatmaps.
+#### Visualizations
+The following visualizations are included in this analysis:
+
+[well status by region]
 #### Feature Engineering:
 
 - Encoded categorical variables with label encoding and one-hot encoding.
