@@ -3,9 +3,11 @@ This repository builds a model to predict functionality of pumps using the Tanza
 
 ## Overview
 This project analyzes Tanzanian water wells to assess their functionality and identify key factors affecting well performance. Using a dataset of over 59,000 water points, we classify wells as:
-Functional
-Non-functional
-Functional but needs repair
+
+- Functional
+- Non-functional
+- Functional but needs repair
+
 The goal is to provide actionable insights to improve water resource management in Tanzania and prioritize repairs or replacements.
 
 ## Project Structure
