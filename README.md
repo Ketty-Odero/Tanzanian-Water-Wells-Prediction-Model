@@ -79,7 +79,7 @@ Visualized relationships using stacked bar charts and heatmaps.
 #### Visualizations
 The following visualizations are included in this analysis:
 
-[well status by region](./images/well_status_region.png)
+(./images/well_status_region.png)
 #### Feature Engineering:
 
 - Encoded categorical variables with label encoding and one-hot encoding.
