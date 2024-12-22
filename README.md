@@ -28,9 +28,12 @@ The goal is to provide actionable insights to improve water resource management 
 - Provide data-driven recommendations for stakeholders.
 
 ## Data source
-The dataset provided on https://www.drivendata.org/ by **Taarifa** and the **Tanzanian Ministry of Water**. More details on the competition could be found [here](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/).
+The dataset used was provided on https://www.drivendata.org/ by **Taarifa** and the **Tanzanian Ministry of Water**. More details on the competition could be found [here](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/).
+
 Feature description for the data can be found in [data description](data_description.txt).
+
 The two datasets we will use are [Training set values](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/data/) and [Training set labels](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/data/)
+
 ##### **Data assumptions :**
 - The dataset is representative of all wells in Tanzania
 - Historical data trends will hold for future predictions
@@ -79,25 +82,52 @@ Visualized relationships using stacked bar charts and heatmaps.
 #### Visualizations
 The following visualizations are included in this analysis:
 
+A stacked bar chart showing well functionality counts across regions
+
 ![well status by region](./images/well_status_region.png)
+
+A stacked bar chart showing well functionality by water quality
+
+![well status by water quality](./images/well_status_water_quality.png)
+
+A stacked bar chart showing well functionality by payments
+
+![well status by payments](./images\well_status_payments.png)
+
 #### Feature Engineering:
 
-- Encoded categorical variables with label encoding and one-hot encoding.
+Encoded categorical variables with label encoding and one-hot encoding.
+
+A correlation heatmap of encoded variables
+
+[corr heatmap](./images\corr_matrix.png)
+
 #### Modeling:
 
-- *Dummy Classifier*: Achieved 50% accuracy with stratified predictions.
-- Machine Learning Models: *Tested Logistic Regression*, *Decision Tree*, and *Random Forest*.
-- Hyperparameter Tuning: Optimized **Random Forest with GridSearchCV**.
+*Dummy Classifier*: Achieved 50% accuracy with stratified predictions.
+
+Machine Learning Models: *Tested Logistic Regression*, *Decision Tree*, and *Random Forest*.
+
+Hyperparameter Tuning: Optimized **Random Forest with GridSearchCV**.
+
 #### Validation:
-- Preprocessed validation data to align with training features.
-- Evaluated model predictions with the test data.
+Preprocessed validation data to align with training features.
+
+Evaluated model predictions with the test data.
 
 ## Key Results
-- Best Model: **Tuned Random Forest**
-- Testing Accuracy: **82.1%**
-- Cross-Validation Score: **81.6%**
+Best Model: **Tuned Random Forest**
+
+Testing Accuracy: **82.1%**
+
+Cross-Validation Score: **81.6%**
+
 Important Features:
 - *Longitude*, *Latitude*, *GPS Height*, *Construction Year*, *Population*
+
+A confusion matrix showing comparison of non-tuned Vs tuned random forest model
+
+[random forest models](./images/origin%20Vs%20tuned.png)
 
 #### **Recommendation**
 - Focus on class 1 improvement by using advanced techniques such class weighting to improve on dataset balance.
