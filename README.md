@@ -1,7 +1,11 @@
 # Tanzanian-Water-Wells-Prediction-Model
 This repository builds a model to predict functionality of pumps using the Tanzanian Water Wells dataset
 
-## Overview
+## Business Understanding
+### Overview
+
+Tanzania is in the midst of a crisis, out of its 65 million population, 55%  and 11% of rural and urban population respectively, do not have access to clean water. People living under these circumstances, particularly women and girls, spend a significant amount of time traveling long distances to collect water.This poses significant risks in public health, economic productivity and educational opportunities. Now more than everaccess to safe water at home is critical to families in Tanzania.
+
 This project analyzes Tanzanian water wells to assess their functionality and identify key factors affecting well performance. Using a dataset of over 59,000 water points, we classify wells as:
 
 - Functional
@@ -10,8 +14,14 @@ This project analyzes Tanzanian water wells to assess their functionality and id
 
 The goal is to provide actionable insights to improve water resource management in Tanzania and prioritize repairs or replacements.
 
-## Project Objectives
+## Business goals
+- **Optimize resource allocation :** Predict well functionality to prioritize repairs for non-functional and poorly functioning wells . 
 
+- **Improve community access to clean water :** Reduce repairs downtime and increase availability of functional water points
+
+- **Support sustainability and durability of wells :** Provide insights to future installations and maintenance strategies. What factors contribute to well failures?
+
+#### Project objectives
 - Understand factors contributing to well performance (geographic, population, funding, etc.).
 - Predict well status using machine learning models.
 - Optimize model performance for **binary classification** (Functional vs. Non-functional/Needs Repair).
