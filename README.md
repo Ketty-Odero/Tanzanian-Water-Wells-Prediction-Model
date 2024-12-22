@@ -36,6 +36,11 @@ Tanzanian-Water-Wells-Prediction-Model/
 └── columns.json                      # Reference columns from training data
 └── index.ipynb                       # Final jupyter notebook
 
+#### Technologies Used
+- Programming: Python, IDE : Jupyter Notebooks
+- Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+- Visualization: Heatmaps, Confusion matrix and Stacked bar charts
+- Version Control: Git, GitHub
 
 ## Analysis Steps
 ####  Data Cleaning:
@@ -55,13 +60,22 @@ Tanzanian-Water-Wells-Prediction-Model/
 - Machine Learning Models: *Tested Logistic Regression*, *Decision Tree*, and *Random Forest*.
 - Hyperparameter Tuning: Optimized **Random Forest with GridSearchCV**.
 #### Validation:
-Preprocessed validation data to align with training features.
-Evaluated model predictions with the test data.
+- Preprocessed validation data to align with training features.
+- Evaluated model predictions with the test data.
 
 ## Key Results
-Best Model: Tuned Random Forest
-Testing Accuracy: 82%
-Cross-Validation Score: 81.6%
+- Best Model: **Tuned Random Forest**
+- Testing Accuracy: **82.1%**
+- Cross-Validation Score: **81.6%**
 Important Features:
-Longitude, Latitude, GPS Height, Construction Year, Population
+- *Longitude*, *Latitude*, *GPS Height*, *Construction Year*, *Population*
+
+#### **Recommendation**
+- Focus on class 1 improvement by using advanced techniques such class weighting to improve on dataset balance.
+- Further analyze feature importance to actually understand which variable are really driving predictions.
+- Explore advanced ensemble methods such as boosting, inorder to optimize models ability to predict minority class.
+- Data quality: Engage with key stakeholders to ensure quality data is collected, to ensure proper handling of outliers or missing values in future with data quality controls put in place.
+- Deployment and Monitoring: Develop a robust system for deploying the model into a production environment and monitor its performance over time.
+
+
 
