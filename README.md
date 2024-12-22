@@ -10,6 +10,13 @@ This project analyzes Tanzanian water wells to assess their functionality and id
 
 The goal is to provide actionable insights to improve water resource management in Tanzania and prioritize repairs or replacements.
 
+## Project Objectives
+
+- Understand factors contributing to well performance (geographic, population, funding, etc.).
+- Predict well status using machine learning models.
+- Optimize model performance for binary classification (Functional vs. Non-functional/Needs Repair).
+- Provide data-driven recommendations for stakeholders.
+
 ## Project Structure
 Tanzanian-Water-Wells-Prediction-Model/
 ├── data/
@@ -28,3 +35,26 @@ Tanzanian-Water-Wells-Prediction-Model/
 ├── README.md                         # Project documentation
 └── columns.json                      # Reference columns from training data
 └── index.ipynb                       # Final jupyter notebook
+
+
+## Analysis Steps
+####  Data Cleaning:
+
+- Handled missing values for features like funder, installer, permit, etc.
+- Dropped irrelevant features like id and date_recorded.
+#### Exploratory Data Analysis:
+
+- Investigated geographic, demographic, and operational factors.
+- Visualized relationships using stacked bar charts and heatmaps.
+#### Feature Engineering:
+
+- Encoded categorical variables with label encoding and one-hot encoding.
+#### Modeling:
+
+- *Dummy Classifier*: Achieved 50% accuracy with stratified predictions.
+- Machine Learning Models: *Tested Logistic Regression*, *Decision Tree*, and *Random Forest*.
+- Hyperparameter Tuning: Optimized **Random Forest with GridSearchCV**.
+#### Validation:
+Preprocessed validation data to align with training features.
+Evaluated model predictions with the test data.
+
