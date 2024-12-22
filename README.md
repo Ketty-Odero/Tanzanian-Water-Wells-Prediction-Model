@@ -100,7 +100,7 @@ Encoded categorical variables with label encoding and one-hot encoding.
 
 A correlation heatmap of encoded variables
 
-[corr heatmap](./images\corr_matrix.png)
+[corr heatmap](./images/corr_matrix.png)
 
 #### Modeling:
 
